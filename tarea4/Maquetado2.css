@@ -1,0 +1,29 @@
+body{
+	margin: 2px;
+	width: 100%;
+	background: #FFFFFF
+}	
+#arriba {
+	width: 1000px;
+	height: 100px;
+	background: #0080FF;
+}
+#izquierda {
+	width: 150px;
+	height: 1000px;
+	background: #01DFD7;
+	float: left;
+}
+
+#cuerpo {
+	width: 800px;
+	height:auto;
+	background: #FFFFFF;
+	float: left;	
+}
+#abajo {
+	width: 1000px;
+	height: 100px;
+	background: #0080FF;
+	clear:both;
+}
