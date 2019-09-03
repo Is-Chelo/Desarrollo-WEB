@@ -1,0 +1,15 @@
+#contenedor{
+	width: 900px;
+	margin:auto;
+}
+
+#arriba {
+	width: 900px;
+	height: 200px;
+	background: #2ECCFA;
+
+}
+#izquierda{
+	width: 120px;
+	background: #BDBDBD;
+}
