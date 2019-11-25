@@ -25,6 +25,14 @@
 	background: #FFF;
 	float: left;
 
+#arriba #imagen {
+	width: 200px
+}
+#arriba #imagen img{
+	margin: auto;
+	width: 30px;
+}
+
 
 }
 h1 {

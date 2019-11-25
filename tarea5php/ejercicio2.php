@@ -9,7 +9,7 @@
 	<title></title>
 </head>
 <body>
-	<table border="1">	
+	<table border="1" class="table">	
 		<tr>
 			<th>X</th>
 			<?php for ($i=1; $i <=$nC; $i++) { 
@@ -37,3 +37,9 @@
 </body>
 </html>
 
+<style>
+table.table{
+	width: <?php$nF?>;
+	height: <?php$nC?>;
+}
+</style>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script type="text/javascript">
+	
+
+	function rojo(){
+
+	var radioButton = document.getElementsByName('radio1');
+	for (var i = 0; i < radioButton.length; i++) {
+		if(radioButton[i].checked){
+			var valor= radioButton[i].value;
+			break;
+		}
+	}
+
+		var rojo="rojo";
+		if(valor=='fondo'){
+		document.getElementById('panel').style.background='red';
+		document.getElementById('panel').style.color='black';
+		document.getElementById('panel').value=rojo;
+		}else{
+			document.getElementById('panel').style.background='white';
+			document.getElementById('panel').style.color='red';
+			document.getElementById('panel').value=rojo;
+		}
+}
+	function amarrillo(){
+
+	var radioButton = document.getElementsByName('radio1');
+	for (var i = 0; i < radioButton.length; i++) {
+		if(radioButton[i].checked){
+			var valor= radioButton[i].value;
+			break;
+		}
+	}
+
+		var amarrillo="amarrillo";
+		if(valor=='fondo'){
+		document.getElementById('panel').style.background='yellow';
+		document.getElementById('panel').style.color='black';
+		document.getElementById('panel').value=amarrillo;
+		}else{
+			document.getElementById('panel').style.background='white';
+			document.getElementById('panel').style.color='yellow';
+			document.getElementById('panel').value=amarrillo;
+		}
+}
+	function verde(){
+
+	var radioButton = document.getElementsByName('radio1');
+	for (var i = 0; i < radioButton.length; i++) {
+		if(radioButton[i].checked){
+			var valor= radioButton[i].value;
+			break;
+		}
+	}
+
+		var verde="verde";
+		if(valor=='fondo'){
+		document.getElementById('panel').style.background='green';
+		document.getElementById('panel').style.color='black';
+		document.getElementById('panel').value=verde;
+		}else{
+			document.getElementById('panel').style.background='white';
+			document.getElementById('panel').style.color='green';
+			document.getElementById('panel').value=verde;
+		}
+}	
+	
+</script>
+<body>
+
+
+	<input type="button" name="red" value="rojo" onclick="rojo()" style="background:#FF7557; border: solid #CE2500; width: 200px; height: 40px; border-radius: 20px; font-size: 20px; "><br> <br>
+	<input type="button" name="yellow" value="amarrillo" onclick="amarrillo()"  style="background:#FFFB7D; border: solid #F7FF00; width: 200px; height: 40px; border-radius: 20px; font-size: 20px; "><br><br>
+	<input type="button" name="green" value="verde" onclick="verde()"  style="background:#6BFF6F; border: solid #00A004; width: 200px; height: 40px; border-radius: 20px; font-size: 20px; "><br><br>
+
+	<input type="radio" name="radio1" value="fondo">Fondo
+	<input type="radio" name="radio1" value="PrimerPlano">PrimerPlano <br><br>
+	
+	
+	<div>
+	<input type="layers" name="capa" id="panel" style="width: 300px; height: 50px; text-align: center;">
+	</div>
+</body>
+</html>
